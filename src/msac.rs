@@ -12,7 +12,7 @@ use crate::include::common::attributes::clz;
 use crate::include::common::intops::{inv_recenter, ulog2};
 
 #[cfg(all(feature = "asm", target_feature = "sse2"))]
-extern "C" {
+unsafe extern "C" {
     fn dav1d_msac_decode_hi_tok_sse2(s: *mut MsacAsmContext, cdf: *mut u16) -> c_uint;
     fn dav1d_msac_decode_bool_sse2(s: *mut MsacAsmContext, f: c_uint) -> c_uint;
     fn dav1d_msac_decode_bool_equi_sse2(s: *mut MsacAsmContext) -> c_uint;
@@ -36,7 +36,7 @@ extern "C" {
 }
 
 #[cfg(all(feature = "asm", target_arch = "x86_64"))]
-extern "C" {
+unsafe extern "C" {
     fn dav1d_msac_decode_symbol_adapt16_avx2(
         s: &mut MsacAsmContext,
         cdf: *mut u16,
