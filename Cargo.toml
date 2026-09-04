@@ -10,7 +10,7 @@ edition = "2024"
 description = "Rust port of the dav1d AV1 decoder"
 license = "BSD-2-Clause"
 repository = "https://github.com/Hiraku-Project/rav1d"
-exclude = ["*.c", "*.h", "*.in", "meson*", "tests/", "doc/", "package/"]
+exclude = ["*.c", "*.in", "meson*", "tests/", "doc/", "package/"]
 
 [lib]
 crate-type = ["staticlib", "rlib"]
