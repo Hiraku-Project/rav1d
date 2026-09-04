@@ -3,14 +3,13 @@ members = [".", "tools"]
 default-members = [".", "tools"]
 
 [package]
-name = "rav1d"
+name = "hiraku-rav1d"
 authors = ["Rav1d Developers", "Prossimo"]
 version = "1.1.0"
-edition = "2021"
-rust-version = "1.79"
+edition = "2024"
 description = "Rust port of the dav1d AV1 decoder"
 license = "BSD-2-Clause"
-repository = "https://github.com/memorysafety/rav1d"
+repository = "https://github.com/Hiraku-Project/rav1d"
 exclude = ["*.c", "*.h", "*.in", "meson*", "tests/", "doc/", "package/"]
 
 [lib]
