@@ -1,6 +1,6 @@
 [workspace]
-members = [".", "tools"]
-default-members = [".", "tools"]
+members = ["."]
+default-members = ["."]
 
 [package]
 name = "hiraku-rav1d"

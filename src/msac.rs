@@ -46,7 +46,7 @@ extern "C" {
 }
 
 #[cfg(all(feature = "asm", target_feature = "neon"))]
-extern "C" {
+unsafe extern "C" {
     fn dav1d_msac_decode_hi_tok_neon(s: *mut MsacAsmContext, cdf: *mut u16) -> c_uint;
     fn dav1d_msac_decode_bool_neon(s: *mut MsacAsmContext, f: c_uint) -> c_uint;
     fn dav1d_msac_decode_bool_equi_neon(s: *mut MsacAsmContext) -> c_uint;
